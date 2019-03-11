@@ -5,6 +5,9 @@ import android.os.Build;
 import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.transition.Transition;
+import android.support.transition.TransitionInflater;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -24,17 +27,19 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
     NavigationView navigationView;
     CardView cdV,cdV2,cdV3;
     Button Btn;
+    Transition transition;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         setUpToolBar();
         cdV = findViewById(R.id.cardView1);
-        cdV2 = findViewById(R.id.cardview2);
-        cdV3 =findViewById(R.id.cardview3);
+        cdV2 = findViewById(R.id.cardView2);
+        cdV3 =findViewById(R.id.cardView3);
         cdV.setOnClickListener(this);
         cdV2.setOnClickListener(this);
         cdV3.setOnClickListener(this);
+
         navigationView =(NavigationView) findViewById(R.id.nevigation);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -75,14 +80,14 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
             case R.id.cardView1:
                 Intent intent3 = new Intent(this, IT.class);
                 startActivity(intent3);
-                Toast.makeText(this, "Button 3 clicked", Toast.LENGTH_SHORT).show();
+                overridePendingTransition(R.anim.animation,R.anim.animation);
                 break;
-            case R.id.cardview2:
+            case R.id.cardView2:
                 Intent intent = new Intent(this, CS.class);
                 startActivity(intent);
                 Toast.makeText(this, "Button 1 clicked", Toast.LENGTH_SHORT).show();
                 break;
-            case R.id.cardview3:
+            case R.id.cardView3:
                 Intent intent2 = new Intent(this, Mech.class);
                 startActivity(intent2);
                 Toast.makeText(this, "Button 2 clicked", Toast.LENGTH_SHORT).show();
@@ -90,6 +95,10 @@ public class Home extends AppCompatActivity implements View.OnClickListener {
 
         }
     }
+
+    private void overridePendingTransition(int fade_out) {
+    }
+
     private void setUpToolBar()
     {
         drawerLayout=(DrawerLayout) findViewById(R.id.drawerLayout);

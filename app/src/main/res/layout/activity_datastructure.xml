@@ -20,13 +20,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/backbtn"
-            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:src="@drawable/ic_arrow_back_white_24dp"
             android:background="@color/Transparnt"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:text="Data Structure"
+            android:textColor="@color/White"
             android:textSize="20dp"
             android:letterSpacing="0.15"
             android:fontFamily="sans-serif-medium"/>

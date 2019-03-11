@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "672995313154",
-    "firebase_url": "https://finalclient-master-76adb.firebaseio.com",
-    "project_id": "finalclient-master-76adb",
-    "storage_bucket": "finalclient-master-76adb.appspot.com"
+    "project_number": "132450851745",
+    "firebase_url": "https://finalclient-master-53437.firebaseio.com",
+    "project_id": "finalclient-master-53437",
+    "storage_bucket": "finalclient-master-53437.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:672995313154:android:c6bad44ed6819ad5",
+        "mobilesdk_app_id": "1:132450851745:android:c6bad44ed6819ad5",
         "android_client_info": {
           "package_name": "com.developer.akashkale.client"
         }
       },
       "oauth_client": [
         {
-          "client_id": "672995313154-9mppvcptn8g304u0g9tm5moub8bk12gi.apps.googleusercontent.com",
+          "client_id": "132450851745-8lda6ibbbi808ok84426umau6c880kgk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.developer.akashkale.client",
@@ -23,13 +23,13 @@
           }
         },
         {
-          "client_id": "672995313154-i6soi19ncqos7b801dlbk37o92el8i6q.apps.googleusercontent.com",
+          "client_id": "132450851745-9qhkdlsj4hcd1cifan1fqlqbmc6s19ro.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBMWAzQW22PTpJRLxDzrKEU0c9FCZ9g3E0"
+          "current_key": "AIzaSyBYiLigFNyKJQ_2QeI4uTMWILF7ODUd76A"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "672995313154-i6soi19ncqos7b801dlbk37o92el8i6q.apps.googleusercontent.com",
+              "client_id": "132450851745-9qhkdlsj4hcd1cifan1fqlqbmc6s19ro.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

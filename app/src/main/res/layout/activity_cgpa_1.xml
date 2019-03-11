@@ -24,7 +24,7 @@
                 android:id="@+id/arrow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_arrow_back_black_24dp"
+                app:srcCompat="@drawable/ic_arrow_back_white_24dp"
                 tools:ignore="RtlCompat,VectorDrawableCompat" />
             <TextView
                 android:layout_width="match_parent"

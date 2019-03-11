@@ -49,6 +49,7 @@ public class IT extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i=new Intent(IT.this,Home.class);
                 startActivity(i);
+                overridePendingTransition(R.anim.outfromup,R.anim.outfromup);
                 finish();
             }
         });
@@ -57,13 +58,17 @@ public class IT extends AppCompatActivity {
             public void onClick(View v) {
             Intent intent1= new Intent(IT.this, DataStructure.class);
             startActivity(intent1);
-
+            finish();
             }
         });
 
 
 
     }
-
+@Override
+    public void onBackPressed(){
+        super.onBackPressed();
+        finish();
+}
 
 }
